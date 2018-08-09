@@ -1,0 +1,77 @@
+% resume.tex
+% Use res.cls
+\documentclass[line,margin]{res}
+\usepackage{helvetica}
+\begin{document}
+
+% Header
+\name{Matthew McFarland}
+\address{\textit{\small{matmcfarland@gmail.com \\ https://github.com/vanetix}}}
+
+% beginning of the actual resume
+\begin{resume}
+
+% Work Experience
+\section{Experience}
+\textit{\textbf{DevOps Engineer}} \hfill June 2016 - Present \\
+Red Ventures (Formerly CreditCards.com)
+\begin{itemize} \itemsep -2pt
+  \item Transformed many disparate deployment methodologies into a well oiled Docker pipeline with a set of strong standards to facilitate fast iteration.
+  \item Provided a key vision, developed, and deployed an application that capitalized this new pipeline to allow end developers to ship their code to multiple environments.
+  \item Automated infrastructure creation and compliance with ansible and chef.
+  \item Monitored AWS account compliance with custom Lambda functions.
+\end{itemize}
+\textit{\textbf{Software Developer}} \hfill June 2013 - July 2016 \\
+Texas School Safety Center, Texas State University, San Marcos
+\begin{itemize} \itemsep -2pt
+  \item Developed and maintained various internal and external facing applications for use across Texas.
+  \item Developed and maintained tools for administration of the Texas School Safety Center's production applications. (grunt-carpenter, passport-txssc)
+  \item Managed all server configurations for production applications.
+\end{itemize}
+\textit{\textbf{Student Developer}} \hfill October 2011 - May 2013 \\
+Texas School Safety Center, Texas State University, San Marcos
+\begin{itemize} \itemsep -2pt
+  \item Developed and maintained various open source libraries including (TrapperKeeper, grunt-includes, omniauth-txssc).
+  \item Developed and maintained statewide and internal web applications built upon our open source libraries (TxSSC Ticket-System, TxSSC Dashboard, TEP Database).
+\end{itemize}
+
+% Education
+\textit{\textbf{Bachelor of Arts, Computer Science}} \\
+Texas State University, San Marcos
+
+% Skills
+\section{Skills}
+
+\textit{\textbf{Technologies:}} \\
+\begin{tabular}{l l l l}
+  Docker & redis & PostgreSQL & Phoenix \\
+  Nginx & Terraform & HAProxy & MySQL \\
+  node.js & Ember & git & Ansible
+\end{tabular}
+
+\textit{\textbf{Languages:}} \\
+\begin{tabular}{l l l l}
+  Elixir & erlang & Javascript & Ruby \\
+  Golang & Java & bash
+\end{tabular}
+
+\textit{\textbf{Key Interests:}} \\
+\begin{tabular}{l l l }
+  AWS & Elixir \\
+  graphql & Kubernetes \\
+  Scaling Infrastructure
+\end{tabular}
+% End of skills
+
+% Open source projects
+\section{Open source}
+
+\textit{\textbf{elixir-keycloak}} - https://github.com/vanetix/elixir-keycloak \\
+A OAuth2 strategy for the \href{https://www.keycloak.org/}{Keycloak} the authorization server.
+
+\textit{\textbf{grunt-includes}} - https://github.com/vanetix/grunt-includes \\
+Plugin for the grunt(gruntjs.com) build system. Used to include file partials and assist in rapid development.
+
+  % End of resume
+\end{resume}
+\end{document}
